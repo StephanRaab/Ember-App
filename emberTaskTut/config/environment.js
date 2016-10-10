@@ -4,6 +4,14 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-task-tut',
     environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+      apiKey: 'AIzaSyBG6hZ6uA0BZPqrSkZHPtwUntahsbZDM7E',
+      authDomain: 'embertasktutorial.firebaseapp.com',
+      databaseURL: 'https://embertasktutorial.firebaseio.com',
+      storageBucket: '',
+      messagingSenderId: '970973507779',
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
